@@ -9,3 +9,9 @@ if len(s1 * int(repeat)) == repeat ** 2:
     print(s2)
 # 5.2
     s3 = s2.copy()
+    new_s3 = []
+    for i in range(0, int(len(s3) * 0.1)):
+        new_s3.append(s3[i])
+    for j in range(int(len(s3) * 0.9), len(s3)):
+        new_s3.append(s3[j])
+    print(new_s3)
