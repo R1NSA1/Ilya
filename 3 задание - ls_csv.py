@@ -4,7 +4,7 @@ def save_table_csv(file_name, data):
     with open(file_name, 'w', newline='', encoding='utf-8') as csvfile:
         csv_writer = csv.writer(csvfile)
         for row in data:
-            csv_writer.writerow(row)
+            csv_writer.writerow(row)                # записываются в файл file_name
 
 
 def load_table_csv(file_name):
